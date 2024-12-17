@@ -1,0 +1,20 @@
+{application, syslog,
+ [
+  {description, "Syslog for erlang"},
+  {vsn, "1.1.0"},
+  {registered, [syslog_sup, syslog]},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { syslog_app, []}},
+  {modules, []},
+  {env, []},
+  {licenses,["BSD"]},
+  {links,[{"Github", "https://github.com/Vagabond/erlang-syslog"}]},
+  {runtime_dependencies, [
+    "erts >= 12.0",
+    "kernel >= 8.0",
+    "stdlib >= 4.0"
+  ]}
+ ]}.
